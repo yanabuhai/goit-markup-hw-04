@@ -107,6 +107,23 @@ img {
   padding: 24px 0;
 }
 
+.header-item-after {
+  position: relative;
+  color: #404bbf;
+}
+
+.header-nav-link.header-item-after::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  display: block;
+}
+
 .header-nav-link:hover {
   color: #404bbf;
 }
@@ -227,6 +244,18 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.advantages-icon-wrap {
+  width: 264px;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 .advantages-icon {
   fill: #2e2f42;
 }
@@ -314,18 +343,24 @@ img {
 .team-icon-item {
   width: 40px;
   height: 40px;
-  fill: F4F4FD;
+}
+
+.team-icon-link:hover {
+  background-color: #404bbf;
 }
 
 .team-icon-link {
   width: 100%;
   height: 100%;
-  background-color: #404bbf;
+  background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-icon {
+  fill: #f4f4fd;
 }
 
 /* -------------------------------------------------- */
@@ -426,6 +461,14 @@ img {
   background-color: #2e2f42;
 }
 
+.footer-flex {
+  display: flex;
+}
+
+.footer-logo-wrap {
+  margin-right: 120px;
+}
+
 .footer-link {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
@@ -448,6 +491,48 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.footer-social {
+}
+
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link:hover {
+  background-color: #31d0aa;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon {
+}
+
+.footer-icon {
+  fill: #f4f4fd;
 }
 
 /* -------------------------------------------------- */
